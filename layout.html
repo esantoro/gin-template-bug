@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <title>{{block "title" .}} DEFAULT TITLE {{end}}</title>
+
+  </head>
+  <body>
+    <div id="container" style="border: 1px solid black;">
+      {{ block "content" .}}  DEFAULT CONTENT {{ end }}
+    </div>
+
+    <div class="footer" style="border: 1px solid yellow;">
+      {{ block "footer" .}}
+      DEFAULT FOOTER
+      {{ end }}
+    </div>
+  </body>
+</html>
+
